@@ -1,6 +1,6 @@
 
 
-**Example**
+**Init Client**
 
 ```js
 var myRestClient; /* create your own RestClient. */
@@ -17,7 +17,10 @@ myRestClient = new ZigposRtlsRestClient({
 	protocol : 'https',
 });
 
+```
+**Example: get all devices**
 
+```js
 
 /* get all devices from API: */
 myRestClient.getAllDevices({
@@ -29,6 +32,10 @@ myRestClient.getAllDevices({
 	}
 });
 
+```
+**Example: get positions history**
+
+```js
 
 /* get positions history for device 873897389716781: */
 myRestClient.getPositionHistory({
