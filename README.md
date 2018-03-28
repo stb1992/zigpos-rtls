@@ -19,7 +19,6 @@ myRestClient = new ZigposRtlsRestClient({
 
 
 
-
 /* get all devices from API: */
 myRestClient.getAllDevices({
 	success : function(data){
@@ -30,10 +29,21 @@ myRestClient.getAllDevices({
 	}
 });
 
+
+/* get positions history for device 873897389716781: */
+myRestClient.getPositionHistory({
+	address : '873897389716781'
+	parameters : [
+		'minTimestamp=1589080554345',
+		'maxTimestamp=1589080565445',
+		'limit=50'
+	]
+	success : function(data){
+		/** [position, position, position, ...] **/
+	},
+	error : function(error){
+		/** handle error **/
+	}
+});
+
 ```
-
-
-
-\## License
-
-\[MIT\](http://opensource.org/licenses/MIT)
