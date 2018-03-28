@@ -17,7 +17,22 @@ myRestClient = new ZigposRtlsRestClient({
 	protocol : 'https',
 });
 
+
+
+
+/* get all devices from API: */
+myRestClient.getAllDevices({
+	success : function(data){
+		/** data  **/
+	},
+	error : function(error){
+		/** handle error **/
+	}
+});
+
 ```
+
+
 
 \## License
 
