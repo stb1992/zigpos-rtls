@@ -23,7 +23,7 @@ myRestClient = new ZigposRtlsRestClient({
 /* get all devices from API: */
 myRestClient.getAllDevices({
 	success : function(data){
-		/** data  **/
+		/** [device, device, device, ...] **/
 	},
 	error : function(error){
 		/** handle error **/
